@@ -8,15 +8,18 @@ body {
 }
 .buttons {
   display: flex;
-  gap: 30px
+  gap: 30px;
+  flex-direction:row;
+  margin-top: 20px;
 }
 .buttons a {
   color: white;
   text-decoration: none;
-  background-image:linear-gradient( rgb(0, 247, 255)) ;
+  background-image:linear-gradient(purple (0, 247, 255)) ;
   background-size:88px 5px ;
   background-position: left bottom;
   background-repeat:no-repeat ;
+  align-items: center;
 }
 .container {
   max-width: 1000px;
@@ -27,7 +30,7 @@ body {
   display: flex;
 }
 header {
-  display: flex;
+  
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -36,8 +39,8 @@ header {
   margin-top: 20px;
   font-size: 1.1rem;
 }
-.titulo-principal {
-  font-size: 10px;
+h1.titulo-principal {
+  font-size: 32px;
 }
 .info {
   flex: none;
@@ -45,7 +48,7 @@ header {
 }
 .info h1 {
   font-family:'Archivo Black',sans-serif;
-  font-size: 2rem;
+  font-size: 1.1rem;
 }
 .info p {
   margin-top: 10px;
@@ -84,18 +87,19 @@ header {
   margin: 0 auto;
   padding: 0 20px;
 }
+
 h2 {
   margin-bottom: 15px;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #6c63ff;
+  font-size: 2rem;
   display: inline-block;
   padding-bottom: 5px;
+  font-weight: bold;
 }
 .skills {
   display:flex;
   flex-direction:column;
   gap: 40px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   max-width: 100%;
   width:100%;
@@ -103,6 +107,9 @@ h2 {
   margin-bottom: auto;
   padding: 20px 30px;
   border-radius: 5px;
+}
+.skills-container {
+  text-align: left;
 }
 .skill {
   margin-bottom: auto;
@@ -119,7 +126,7 @@ h2 {
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 1.1rem;
-  gap: 200px;
+  gap: 380px;
 }
 
 .skill-image {
@@ -152,6 +159,15 @@ h2 {
 }
 .card-content {
   padding: 15px;
+}
+.card-icons {
+display: flex;
+gap:10px;
+}
+.card-icons img{
+  display:flex;
+  width: 30px;
+  height: auto;
 }
 .contact {
   text-align: center;
@@ -219,6 +235,7 @@ h2 {
   width: 100%;
   padding: 40px 8%;
   background: #000;
+  align-items: flex-start;
 }
 .card-icons {
   width: 40px;
@@ -226,7 +243,13 @@ h2 {
   object-fit: contain;
   position:relative;
 }
-  
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 500px;
+  width: 100%;
+  padding: 40px 0%;
+} 
 .projects-title {
   color: white;
   font-size: 2rem;
@@ -282,7 +305,6 @@ h2 {
 .project-links a:hover {
   color:white;
 }
-
 .subtitle {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif ;
