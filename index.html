@@ -9,32 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Archivo+Black&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-<header>
-    <div class="container">
-    <div  class="info">
-    <h1 class="titulo-principal">Erika Cadena</h1>
-    </div>
-  <h2 class="subtitle">Desarrolladora Full-Stack Junior | TypeScript, React, Node.js</h2>
-  <p>Desarrolladora web junior con experiencia práctica creando interfaces limpias y responsivas con HTML, CSS, JavaScript y React, así como implementando lógica básica de back-end. Ha trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro y resolver problemas de forma estructurada. Motivada por seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer como desarrolladora.</p></div>
-  
-  <div class="buttons">
-  <a href="cv.pdf" download class="btn">Descargar CV</a>
-  <a href="github" target="_blank" class="btn">Enlace a GitHub</a>
-  <a href="github" target="_blank" class="btn">Hablemos</a>
-  </div>
-   <div>
-  </div>
-  <div class="foto"></div>
-  <img class="skill-image" src="./Images/eri.jpg"  alt="Foto de Erika">
-  </div>
-</div>
-  </header>
 
+<body class="page">
+<header class="header">
+    <div class="header__background"></div>
+    <div  class="header__information">
+    <h1 class="header__title">
+    <span class="header__name">Erika</span>
+    <span class="header__lastname">Cadena</span>
+    </h1>
+    <p class="header__subtitle">
+     Desarrollador Web
+    <span class="header__divider">|</span>
+    <span class="header__tech">HTML,CSS,JavaScript </span>
+    </p>
+    <p class="header__description">
+    Desarrolladora web junior con experiencia práctica creando interfaces limpias y responsivas con HTML, CSS, JavaScript y React, así como implementando lógica básica de back-end. Ha trabajado en proyectos formativos que siguen procesos reales de desarrollo, usando Git, GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro y resolver problemas de forma estructurada. Motivada por seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades para crecer como desarrolladora.
+    </p>
+    <nav class="nav">
+    <ul class="nav__links">
+    <li>
+    <a class="nav__link" href="#">Descargar CV</a>
+    </li>
+    <li>
+    <a class="nav__link" href="#">Enlace a Github</a>
+    </li>
+    <li>
+    <a class="nav__link" href="#">Hablemos</a>
+    </li>
+    </ul>
+    </nav> 
+</div>
+    <img class="header__image" src="./Images/eri.jpg"  alt="Foto de Erika">
+    </header>
+
+  <main class="main">
   <section class="skills">
-  <div class="skills-container">
-  <h2>Habilidades y Herramientas</h2>
-  <div class="skill">
+  <h2 class="skills__title"> Habilidades y Herramientas</h2>
+  <div class="skills__icons">
   <img class="skill-image" src="./Images/Group 120570.png " alt="HTML5" />
   <img class="skill-image" src="./Images/Group 2087326844.png"  alt="CSS3" />
   <img class="skill-image" src="./Images/Group 120568.svg" alt="JavaScript" />
@@ -42,50 +54,94 @@
   <img class="skill-image" src="./Images/Group 2087326847.png" alt="Github" />
   <img class="skill-image" src="./Images/Group 2087326848.png" alt="ChatGPT" />
   </div>
-  </div>
   </section>
 
-  <section class="projects-container">
-  <h2 class="projects-title">Proyectos destacados</h2>
-  <div class="projects">
-  <div class="card">
-  <img class="header-img"  src="./Images/Rectangle 3.png"  alt="cover img">
-  <div class="card-icons">
-   <img src="./Images/Group 120570.png " alt="HTML5" /> 
-   <img src="./Images/Group 2087326844.png" alt="CSS3" />
-  </div>  
-  <div class="card-content">
-  <h3>Pagina Web de una Cafeteria </h3>
-  <p>Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional.Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</p>
-  </div>
-  </div>
-  <div class="card">
-  <img class="skill.image"  src="./Images/Rectangle 5.png" alt="proyecto">
-  <div class="card-content">
-  <div class="card-icons">
-  <img src="./Images/Frame 2087328169.png" alt="JS" />
-  <img src="./Images/Frame 2087328170.png" alt="React" />
-  </div>
-    <h3>Mi proyectos</h3>
-  <p>Descripción breve del proyecto.</p>
+<section class="projects">
+        <h2 class="projects__title">Proyectos destacados</h2>
+        <div class="projects__grids">
+          <div class="project__grid">
+            <div class="project__media">
+              <img class="project__image" src="./Images/Rectangle 3.png" alt="Cafeteria express Tripleten">
+              <div class="project__overlay"></div>
+              <div class="project__tech">
+                <img class="project__tech-logo" src="./Images/Group 120570.png" alt="HTML5">
+                <img class="project__tech-logo" src="./Images/Group 2087326844.png" alt="CSS3">
+              </div>
+            </div>
+            <div class="project__info">
+              <p class="project__title">Página web de una cafetería</p>
+              <p class="project__description">
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional. Logro: Implementé desde cero
+                el diseño completo de la página, organicé el proyecto con buenas
+                prácticas y publiqué la versión final utilizando GitHub Pages.
+              </p>
+
+              <div class="project__links">
+                <a class="project__link" href="#">
+                  <img class="project__icon" src="./Images/Group 2087326849.png" alt="Demo en vivo">
+                </a>
+                <a class="project__link" href="#">
+                  <img class="project__icon" src="./Images/Group 2087326850.png" alt="Github">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__grid">
+            <div class="project__media">
+              <img class="project__image" src="./Images/Rectangle 5.png" alt="proyecto-cafeteria">
+              <div class="project__overlay"></div>
+              <div class="project__tech">
+                <img class="project__tech-logo" src="./Images/Frame 2087328169.png" alt="html-logo">
+                <img class="project__tech-logo" src="./Images/Frame 2087328170.png" alt="css-logo">
+              </div>
+            </div>
+            <div class="project__info">
+              <p class="project__title">Mi proyecto</p>
+              <p class="project__description">Descripcion del proyecto</p>
+
+              <div class="project__links">
+                <a class="project__link" href="#">
+                  <img class="project__icon" src="./Images/Group 2087326849.png" alt="demo-en-vivo">
+                </a>
+                <a class="project__link" href="#">
+                  <img class="project__icon" src="./Images/Group 2087326850.png" alt="gitHub-logo">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
-    </section>
-    <section class="contact">
-      <h2 class="contact-tittle">Contacto</h2>
-      <p><a href="studente@tripleten.com">studente@tripleten.com</a></p>
-      <p>
-        <img src="./Images/IN.png" alt="Linkedin">
-        <img src="./Images/facebook.png" alt="facebook">
-        <img src="./Images/instagram.png" alt="instagram">
-        <img src="./Images/X.png" alt="X">
-    </p>
-    </section>
-
-  </div>
-
+      </section>
+  
+  </main>
+  <footer class="footer" id="contact">
+<div class="footer__background"></div>
+<div class="footer__content">                                           
+<h2 class="footer__title">Contacto</h2>
+<ul class="footer__list">
+<li class="footer__item">
+ <a class="footer__contact" href="#">michelle2016cadena@gmail.com</a>   
+</li>
+<li class="footer__item footer__social">
+<a class="footer__link" href="#">
+<img  src="./Images/IN.png" alt="Linkedin-link" class="footer__icon">
+</a>
+<a class="footer__link" href="#">
+<img  class="footer__icon" src="./Images/facebook.png" alt="Facebook">
+</a>
+<a class="footer__link" href="#">
+<img src="./Images/instagram.png" alt="instagram">
+</a>
+<a class="footer__link" href="#">
+<img src="./Images/X.png" alt="X">
+</a>
+</li>
+</ul>
+</div>
+  </footer>
 </body>
 </html>
-
-
+ 
