@@ -1,8 +1,7 @@
-.body {
-  body {
-    background: radial-gradient(circle, #4c1a97 0%, #1c1c1c 60% #000000 100%);
-};
+.page {
+background: radial-gradient(circle, #4c1a97 0%, #1c1c1c 60% , #000000 100%);
 }
+
 .header {
   position: relative;
   display: flex;
@@ -53,7 +52,7 @@
   padding: 0;
   max-width: 790px;
   width: 100%;
-  font-family: "Open Sans";
+  font-family: "Archivo Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -117,12 +116,6 @@ p.header__description {
     object-fit: cover;
   }
 }
-@import url(header.css);
-@import url(nav.css);
-@import url(main.css);
-@import url(footer.css);
-@import url(page.css);
-
 @font-face {
   font-family: "Archivo Black";
   src:
@@ -133,7 +126,7 @@ p.header__description {
 }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   src:
     url("../fonts/OpenSans-Regular.woff2") format("woff2"),
     url("../fonts/OpenSans-Regular.woff") format("woff");
@@ -296,11 +289,6 @@ p.header__description {
   display: flex;
   height: 100%;
   flex-direction: column;
-}
-.project__media {
-  width: 100%;
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
 }
 .project__image {
   width: 100%;
@@ -504,7 +492,7 @@ p.header__description {
   color: rgba(255, 255, 255, 0.5);
 }
 /* Mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .nav__links {
     align-items: flex-start;
     flex-direction: column;
@@ -524,7 +512,7 @@ p.header__description {
   background-color: #1e1e1e;
 }
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   * {
     box-sizing: border-box;
   }
@@ -533,6 +521,7 @@ p.header__description {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
+    max-width: 1023px;
   }
 }
 /* Mobile */
