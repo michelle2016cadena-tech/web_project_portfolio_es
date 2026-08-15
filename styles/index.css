@@ -244,7 +244,7 @@ p.header__description {
   font-size: 40px;
   line-height: 100%;
   color: #ffffff;
-  padding: o;
+  padding: 0;
   margin: 0;
 }
 .skills__icons {
@@ -525,7 +525,7 @@ p.header__description {
   }
 }
 /* Mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .page {
     width: 100%;
     padding-top: 20px;
